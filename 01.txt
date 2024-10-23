@@ -1,0 +1,104 @@
+1
+00:00:01,200 --> 00:00:05,480
+ Hey everyone and welcome to the official NestJS Fundamentals course.
+
+2
+00:00:05,960 --> 00:00:17,809
+ In this course, we are going to be covering the NestJS framework from top to bottom, getting you up to speed in creating enterprise-grade Node.js applications with the help of NestJS in no time.
+
+3
+00:00:17,840 --> 00:00:20,279
+ So let's introduce the instructors for this course.
+
+4
+00:00:21,100 --> 00:00:28,539
+ My name is Kamil, the NestJS creator, and alongside me is NestJS Core Team member Mark, and we are excited to have you learning NestJS with us.
+
+5
+00:00:29,120 --> 00:00:35,780
+ To get the most out of this course, try to code alongside us, and remember that you can pause the videos at any time.
+
+6
+00:00:36,000 --> 00:00:41,270
+ Almost everything we are going to be looking at, learning, and building in this course will be incremental.
+
+7
+00:00:41,660 --> 00:00:52,000
+ By the end, you will have a somewhat real-world application and be ready to fully take advantage of the NestJS framework, even using it as a great jumping off point for your future applications.
+
+8
+00:00:52,640 --> 00:00:53,789
+ Let's dive right in.
+
+9
+00:00:54,300 --> 00:01:01,979
+ Before we dive into exactly what NASJS is, let's take a step back and look at the Node.js ecosystem as a whole.
+
+10
+00:01:02,080 --> 00:01:09,239
+ Node.js makes no assumptions and includes almost nothing by default, for it's purposely meant to be very barebones.
+
+11
+00:01:09,320 --> 00:01:17,399
+ Node.js by design has a minimalistic setup and developers are in charge of setting up everything they want to use for their application.
+
+12
+00:01:17,479 --> 00:01:27,540
+ This applies to everything from how you handle routing, API calls, setting up web sockets, to even rudimentary things like code organization, file structure, and naming conventions.
+
+13
+00:01:28,200 --> 00:01:43,080
+ As Node.js has been around for many years, and there are plenty of frameworks that have helped make some of these common requirements simpler, most notably Express, but they all still require a lot of configuration and effort on the part of the developer.
+
+14
+00:01:43,160 --> 00:01:51,950
+ This ultimate flexibility can be a bit of a double-edged sword, creating potential problems as applications or teams grow very large.
+
+15
+00:01:52,080 --> 00:02:11,120
+ NASJS tries to tackle some of these problems by creating an abstraction, or overall framework, around Node.js, letting you focus on the application problem at hand, instead of the tiny implementation details such as setting up TypeScript, API routing, error handling, middleware setup, and so much more.
+
+16
+00:02:11,240 --> 00:02:22,979
+ NASJS provides an out-of-the-box application architecture that allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications.
+
+17
+00:02:23,000 --> 00:02:25,379
+ But how is this achieved?
+
+18
+00:02:25,399 --> 00:02:38,250
+ Think of NASJS as a layer above Node.js itself, abstracting away difficult tasks, tools, and boilerplate code while also adding a full-fledged toolkit for your application development.
+
+19
+00:02:38,359 --> 00:02:50,510
+ Using NASJS does not lock you into yet another framework, but instead, leverages readily available and prominent options and modules in the community, like those available in Express applications.
+
+20
+00:02:50,600 --> 00:02:59,080
+ One interesting thing to note is that Nest can even be swapped to use Fastify under the hood instead of Express, which is used by default.
+
+21
+00:02:59,160 --> 00:03:05,000
+ Just keep in mind that you may need to use different Fastify-compliant libraries in your application if you do this.
+
+22
+00:03:06,000 --> 00:03:19,850
+ The flexibility that Nest provides here gives us the ability to create modules that are platform-agnostic not only to HTTP frameworks such as Express or Fastify, but even agnostic across different types of applications.
+
+23
+00:03:19,920 --> 00:03:30,560
+ With NASJS, you can build REST APIs, MVC applications, microservices, GraphQL applications, WebSockets, and even CLIs and CronJobs.
+
+24
+00:03:30,620 --> 00:03:38,450
+ With the help of NASJS dependency injection system, we have the ability to swap out the underlying mechanisms effortlessly.
+
+25
+00:03:38,480 --> 00:03:48,919
+ In this course, we are going to be focusing on creating a real-world example REST API application, utilizing and learning about all the great NestJS features along the way.
+
+26
+00:03:49,560 --> 00:03:50,559
+ By the time we finish, you will be ready to tackle any challenge with NestJS.
+
